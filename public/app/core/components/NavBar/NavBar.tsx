@@ -124,7 +124,7 @@ NavBarUnconnected.displayName = 'NavBar';
 
 export const NavBar = connector(NavBarUnconnected);
 
-const getStyles = (theme: GrafanaTheme2) => ({
+const   getStyles = (theme: GrafanaTheme2) => ({
   search: css`
     display: none;
     margin-top: ${theme.spacing(5)};

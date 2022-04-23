@@ -1,4 +1,4 @@
-{{Subject .Subject "Welcome to Grafana, please complete your sign up!"}}
+{{Subject .Subject "Welcome to SolidInsight, please complete your sign up!"}}
 
 Complete the signup
 

@@ -36,7 +36,7 @@ describe('Login Page', () => {
   it('renders correctly', () => {
     render(<LoginPage />);
 
-    expect(screen.getByRole('heading', { name: 'Welcome to Grafana' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Welcome to SolidInsight' })).toBeInTheDocument();
     expect(screen.getByRole('textbox', { name: 'Username input field' })).toBeInTheDocument();
     expect(screen.getByLabelText('Password input field')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Login button' })).toBeInTheDocument();

@@ -8,7 +8,7 @@ import { IconButton } from '../IconButton/IconButton';
 import { TagList } from '../Tags/TagList';
 import { VerticalGroup } from '../Layout/Layout';
 
-const logo = 'https://grafana.com/static/assets/img/apple-touch-icon.png';
+const logo = '/public/img/apple-touch-icon.png';
 
 export default {
   title: 'General/Card',
@@ -161,7 +161,7 @@ export const Selected: Story<Props> = () => {
       <Card.Heading>Spaces</Card.Heading>
       <Card.Description>Spaces are the superior form of indenting code.</Card.Description>
       <Card.Figure>
-        <img src={logo} alt="Grafana Logo" width="40" height="40" />
+        <img src={logo} alt="SolidInsight  Logo" width="40" height="40" />
       </Card.Figure>
     </Card>
   );
@@ -173,7 +173,7 @@ export const NotSelected: Story<Props> = () => {
       <Card.Heading>Tabs</Card.Heading>
       <Card.Description>Tabs are the preferred way of indentation.</Card.Description>
       <Card.Figure>
-        <img src={logo} alt="Grafana Logo" width="40" height="40" />
+        <img src={logo} alt="SolidInsight  Logo" width="40" height="40" />
       </Card.Figure>
     </Card>
   );
