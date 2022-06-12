@@ -30,7 +30,7 @@ export const DocsCard: FC<Props> = ({ card }) => {
         target="_blank"
         rel="noreferrer"
       >
-        Learn how in the docs <Icon name="external-link-alt" />
+        {/*Learn how in the docs <Icon name="external-link-alt" />*/}
       </a>
     </div>
   );
