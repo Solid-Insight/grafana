@@ -144,7 +144,7 @@ export class TestDataDataSource extends DataSourceWithBackend<TestDataQuery> {
     for (let i = 0; i < count; i++) {
       events.push({
         time: timeWalker,
-        text: 'This is the text, <a href="https://grafana.com">Grafana.com</a>',
+        text: 'This is the text, <a href="https://app.solidinsight.io">SolidInsight.io</a>',
         tags: ['text', 'server'],
       });
       timeWalker += step;
