@@ -33,7 +33,7 @@ jobs:
         with:
           registry: ghcr.io
           username: tyronewilson
-          password: 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
+          password: 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
 
       - uses: docker/build-push-action@v2.8.0
         with:
