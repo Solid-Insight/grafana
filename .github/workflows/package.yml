@@ -18,7 +18,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            ghcr.io/Solid-Insight/grafana
+            ghcr.io/solid-insight/grafana
           tags: |
             type=ref,event=pr
             type=raw,value=latest,enable=${{ endsWith(github.ref, github.event.repository.default_branch) }}
@@ -32,8 +32,8 @@ jobs:
         name: Login to Github Registry
         with:
           registry: ghcr.io
-          username: tyronewilson
-          password: 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
+          username: ${{ github.actor}}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: docker/build-push-action@v2.8.0
         with:
