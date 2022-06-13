@@ -3,9 +3,7 @@ on:
   pull_request:
     branches:
       - master
-  workflow_run:
-    branches:
-      -  master
+
 jobs:
   grafana:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
