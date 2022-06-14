@@ -17,7 +17,7 @@ export const AlertManagerPicker: FC<Props> = ({ onChange, current, disabled = fa
   const options: Array<SelectableValue<string>> = useMemo(() => {
     return [
       {
-        label: 'Grafana',
+        label: 'SolidInsight',
         value: GRAFANA_RULES_SOURCE_NAME,
         imgUrl: 'public/img/solidinsight_icon.svg',
         meta: {},

@@ -5,7 +5,7 @@ import { RuleFormType } from '../../../types/rule-form';
 const GrafanaManagedRuleType: FC<SharedProps> = ({ selected = false, disabled, onClick }) => {
   return (
     <RuleType
-      name="Grafana managed alert"
+      name="SolidInsight managed alert"
       description={
         <span>
           Supports multiple data sources of any kind.

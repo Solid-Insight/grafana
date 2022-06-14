@@ -58,7 +58,7 @@ export class Branding {
   static LoginBackground = LoginBackground;
   static MenuLogo = MenuLogo;
   static LoginBoxBackground = LoginBoxBackground;
-  static AppTitle = 'Grafana';
+  static AppTitle = 'SolidInsight';
   static LoginTitle = 'Welcome to SolidInsight';
   static GetLoginSubTitle = (): null | string => {
     return null;
