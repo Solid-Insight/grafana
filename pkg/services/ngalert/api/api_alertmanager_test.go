@@ -404,10 +404,10 @@ var validConfig = setting.GetAlertmanagerDefaultConfiguration()
 var brokenConfig = `
 	"alertmanager_config": {
 		"route": {
-			"receiver": "grafana-default-email"
+			"receiver": "solidinsight-default-email"
 		},
 		"receivers": [{
-			"name": "grafana-default-email",
+			"name": "solidinsight-default-email",
 			"grafana_managed_receiver_configs": [{
 				"uid": "abc",
 				"name": "default-email",

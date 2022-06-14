@@ -52,7 +52,7 @@ func TestProvisioning(t *testing.T) {
 		url := fmt.Sprintf("http://%s/api/provisioning/policies", grafanaListedAddr)
 		body := `
 		{
-			"receiver": "grafana-default-email",
+			"receiver": "solidinsight-default-email",
 			"group_by": [
 				"..."
 			],

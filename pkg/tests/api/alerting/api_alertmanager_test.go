@@ -72,10 +72,10 @@ func TestAMConfigAccess(t *testing.T) {
 		{
 			"alertmanager_config": {
 				"route": {
-					"receiver": "grafana-default-email"
+					"receiver": "solidinsight-default-email"
 				},
 				"receivers": [{
-					"name": "grafana-default-email",
+					"name": "solidinsight-default-email",
 					"grafana_managed_receiver_configs": [{
 						"uid": "",
 						"name": "email receiver",
@@ -141,11 +141,11 @@ func TestAMConfigAccess(t *testing.T) {
 			"template_files": null,
 			"alertmanager_config": {
 				"route": {
-					"receiver": "grafana-default-email"
+					"receiver": "solidinsight-default-email"
 				},
 				"templates": null,
 				"receivers": [{
-					"name": "grafana-default-email",
+					"name": "solidinsight-default-email",
 					"grafana_managed_receiver_configs": [{
 						"disableResolveMessage": false,
 						"uid": "",
@@ -1957,11 +1957,11 @@ func TestAlertmanagerStatus(t *testing.T) {
 	},
 	"config": {
 		"route": {
-			"receiver": "grafana-default-email"
+			"receiver": "solidinsight-default-email"
 		},
 		"templates": null,
 		"receivers": [{
-			"name": "grafana-default-email",
+			"name": "solidinsight-default-email",
 			"grafana_managed_receiver_configs": [{
 				"uid": "",
 				"name": "email receiver",

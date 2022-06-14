@@ -11,7 +11,6 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"gopkg.in/yaml.v3"
 )
 
 func Test_ApiReceiver_Marshaling(t *testing.T) {
@@ -417,7 +416,7 @@ func Test_ConfigUnmashaling(t *testing.T) {
 			input: `
 				{
 				  "route": {
-					"receiver": "grafana-default-email"
+					"receiver": "solidinsight-default-email"
 				  },
 				  "mute_time_intervals": [
 					{
@@ -437,7 +436,7 @@ func Test_ConfigUnmashaling(t *testing.T) {
 				  "templates": null,
 				  "receivers": [
 					{
-					  "name": "grafana-default-email",
+					  "name": "solidinsight-default-email",
 					  "grafana_managed_receiver_configs": [
 						{
 						  "uid": "uxwfZvtnz",
@@ -461,7 +460,7 @@ func Test_ConfigUnmashaling(t *testing.T) {
 			input: `
 				{
 				  "route": {
-					"receiver": "grafana-default-email"
+					"receiver": "solidinsight-default-email"
 				  },
 				  "mute_time_intervals": [
 					{
@@ -494,7 +493,7 @@ func Test_ConfigUnmashaling(t *testing.T) {
 				  "templates": null,
 				  "receivers": [
 					{
-					  "name": "grafana-default-email",
+					  "name": "solidinsight-default-email",
 					  "grafana_managed_receiver_configs": [
 						{
 						  "uid": "uxwfZvtnz",
@@ -518,7 +517,7 @@ func Test_ConfigUnmashaling(t *testing.T) {
 			input: `
 				{
 				  "route": {
-					"receiver": "grafana-default-email",
+					"receiver": "solidinsight-default-email",
 					"mute_time_intervals": ["test1"]
 				  },
 				  "mute_time_intervals": [
@@ -539,7 +538,7 @@ func Test_ConfigUnmashaling(t *testing.T) {
 				  "templates": null,
 				  "receivers": [
 					{
-					  "name": "grafana-default-email",
+					  "name": "solidinsight-default-email",
 					  "grafana_managed_receiver_configs": [
 						{
 						  "uid": "uxwfZvtnz",
@@ -563,10 +562,10 @@ func Test_ConfigUnmashaling(t *testing.T) {
 			input: `
 				{
 				  "route": {
-					"receiver": "grafana-default-email",
+					"receiver": "solidinsight-default-email",
 					"routes": [
 						{
-						  "receiver": "grafana-default-email",
+						  "receiver": "solidinsight-default-email",
 						  "object_matchers": [
 							[
 							  "a",
@@ -598,7 +597,7 @@ func Test_ConfigUnmashaling(t *testing.T) {
 				  "templates": null,
 				  "receivers": [
 					{
-					  "name": "grafana-default-email",
+					  "name": "solidinsight-default-email",
 					  "grafana_managed_receiver_configs": [
 						{
 						  "uid": "uxwfZvtnz",
@@ -621,10 +620,10 @@ func Test_ConfigUnmashaling(t *testing.T) {
 			input: `
 				{
 				  "route": {
-					"receiver": "grafana-default-email",
+					"receiver": "solidinsight-default-email",
 					"routes": [
 						{
-						  "receiver": "grafana-default-email",
+						  "receiver": "solidinsight-default-email",
 						  "object_matchers": [
 							[
 							  "a",
@@ -656,7 +655,7 @@ func Test_ConfigUnmashaling(t *testing.T) {
 				  "templates": null,
 				  "receivers": [
 					{
-					  "name": "grafana-default-email",
+					  "name": "solidinsight-default-email",
 					  "grafana_managed_receiver_configs": [
 						{
 						  "uid": "uxwfZvtnz",

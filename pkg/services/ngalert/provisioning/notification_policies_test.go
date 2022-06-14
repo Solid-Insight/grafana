@@ -17,7 +17,7 @@ func TestNotificationPolicyService(t *testing.T) {
 		tree, err := sut.GetPolicyTree(context.Background(), 1)
 		require.NoError(t, err)
 
-		require.Equal(t, "grafana-default-email", tree.Receiver)
+		require.Equal(t, "solidinsight-default-email", tree.Receiver)
 	})
 
 	t.Run("service stitches policy tree into org's AM config", func(t *testing.T) {

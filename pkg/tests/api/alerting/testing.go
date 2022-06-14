@@ -15,11 +15,11 @@ const defaultAlertmanagerConfigJSON = `
 	"template_files": null,
 	"alertmanager_config": {
 		"route": {
-			"receiver": "grafana-default-email"
+			"receiver": "solidinsight-default-email"
 		},
 		"templates": null,
 		"receivers": [{
-			"name": "grafana-default-email",
+			"name": "solidinsight-default-email",
 			"grafana_managed_receiver_configs": [{
 				"uid": "",
 				"name": "email receiver",

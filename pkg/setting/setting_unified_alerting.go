@@ -12,7 +12,6 @@ import (
 	"github.com/grafana/grafana/pkg/util"
 
 	"github.com/prometheus/alertmanager/cluster"
-	"gopkg.in/ini.v1"
 )
 
 const (
@@ -26,10 +25,10 @@ const (
 	alertmanagerDefaultConfiguration = `{
 	"alertmanager_config": {
 		"route": {
-			"receiver": "grafana-default-email"
+			"receiver": "solidinsight-default-email"
 		},
 		"receivers": [{
-			"name": "grafana-default-email",
+			"name": "solidinsight-default-email",
 			"grafana_managed_receiver_configs": [{
 				"uid": "",
 				"name": "email receiver",
