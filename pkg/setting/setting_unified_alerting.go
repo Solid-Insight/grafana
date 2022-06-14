@@ -3,6 +3,7 @@ package setting
 import (
 	"errors"
 	"fmt"
+	"gopkg.in/ini.v1"
 	"strconv"
 	"strings"
 	"time"
