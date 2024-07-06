@@ -17,6 +17,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
+          build-args:
+            = GF_INSTALL_IMAGE_RENDERER_PLUGIN="true"
           images: |
             ghcr.io/solid-insight/grafana
           tags: |
