@@ -4,7 +4,7 @@ FROM debian:jessie
 
 LABEL maintainer="Grafana team <hello@grafana.com>"
 
-ENV OPENLDAP_VERSION 2.4.40
+ENV OPENLDAP_VERSION=2.4.40
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \

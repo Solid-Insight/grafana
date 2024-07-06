@@ -17,7 +17,7 @@ COPY tools tools
 COPY scripts scripts
 COPY emails emails
 
-ENV NODE_ENV production
+ENV NODE_ENV=production
 RUN yarn build
 
 FROM golang:1.17.8-alpine3.15 AS go-builder
